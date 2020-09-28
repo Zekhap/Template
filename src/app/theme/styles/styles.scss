@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css?family=Marko+One');
+@import 'global';
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+a, button {
+	outline: none !important;
+  cursor: pointer;
+  font-family: inherit;
+}
+a,
+a:link,
+a:visited {
+	text-decoration: none!important;
+  color: $text-color-default!important;
+}
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0!important;
+}
+
+/* ========================================================================
+ * Scroll
+ * ======================================================================== */
+::-webkit-scrollbar {
+  background: rgba(255, 255, 255, 0.2);
+  position: absolute;
+  width: 4px;
+}
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 4px rgba(0, 0, 0, 0.3);
+}
+::-webkit-scrollbar-thumb {
+  background-color: #2d3035;;
+}
+/* ========================================================================
+ * HTML, BODY
+ * ======================================================================== */
+html, body {
+    height: 100%;
+}
+html {
+    direction: ltr;
+    -webkit-font-smoothing: antialiased;
+}
+body {
+    font-family: 'Marko One';
+    overflow-x: hidden;
+    margin: 0;
+
+    background: #22252a;
+    color: $text-color-default;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    word-wrap: break-word;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+/* ========================================================================
+ * WRAPPER, CONTENT-WRAPPER
+ * ======================================================================== */
+ body #site-container {
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+/* ========================================================================
+ * Text Colors, Other
+ * ======================================================================== */
+.text-center {
+  text-align: center;
+}
+.text-default {
+  color: $text-color-default;
+}
+.text-white {
+  color: $text-color-white;
+}
+.text-orange {
+  color: $text-color-orange;
+}
+.text-red {
+  color: $text-color-red;
+}
+.text-green {
+  color: $text-color-green;
+}
+.text-lightblue {
+  color: $text-color-lightblue;
+}
+.text-blue {
+  color: $text-color-blue;
+}
+.text-gray {
+  color: $text-color-gray;
+}
+.text-muted {
+  color: $text-color-muted;
+}

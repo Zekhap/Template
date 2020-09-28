@@ -1,0 +1,126 @@
+@import '../../styles/global';
+#left-sidebar-menu {
+  padding-top: $header-height;
+  width: $sidebar-width;
+  position: fixed;
+  overflow-y: auto;
+  top: 0;
+  bottom: 0;
+}
+
+#left-sidebar-menu ul:first-child {
+  padding-top: 15px;
+}
+#left-sidebar-menu ul {
+  max-height: none;
+  
+}
+#left-sidebar-menu #header {
+  font-weight: 700;
+  margin-left: 20px;
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+}
+
+#left-sidebar-menu li.active::before {
+  content: '';
+  width: 2px;
+  height: 100%;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 99;
+}
+
+#left-sidebar-menu li.active > a {
+  background: #34373d;
+  color: #bfc1c4;
+}
+#left-sidebar-menu a {
+  position: relative;
+}
+#left-sidebar-menu li a {
+  padding: 18px 20px;
+  display: block;
+  font-weight: 400;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+#left-sidebar-menu li.active fa-icon {
+  color: #ff3f3f;
+}
+
+#left-sidebar-menu li a fa-icon {
+  margin-right: 20px;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  padding-right: 20px;
+  border-right: 1px solid #454649;
+}
+
+#left-sidebar-menu li a:hover fa-icon {
+  color: #ff3f3f;
+}
+#left-sidebar-menu li a:hover {
+  background: #34373d;
+}
+
+#left-sidebar-menu li li a {
+  padding: 14px;
+  padding-left: 60px;
+  background: #22252a;
+}
+
+#left-sidebar-menu a[aria-expanded="true"]::after {
+  content: '\f053';
+}
+
+#left-sidebar-menu a[data-toggle="collapse"]::after {
+  content: '\f053';
+  display: inline-block;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  font-family: 'FontAwesome';
+  position: absolute;
+  top: 50%;
+  right: 20px;
+}
+#left-sidebar-menu li li a:hover {
+  background: #292c32;
+}
+
+@include media-breakpoint-down(sm){
+  #left-sidebar-menu {
+    width: $sidebar-compact-width;
+  }
+  #left-sidebar-menu ul a {
+    padding: 14px 5px;
+    display: block;
+    font-weight: 400;
+    text-align: center;
+    font-size: 13px;
+    word-break: break-word;
+  }
+
+  #left-sidebar-menu ul fa-icon {
+    font-size: 1.2rem;
+    text-align: center !important;
+    width: 100%;
+    display: block !important;
+    border: none !important;
+    padding: 0 !important;
+  }
+
+  #left-sidebar-menu #header {
+    margin-left: 0;
+    display: block;
+    text-align: center;
+    font-size: 15px;
+  }
+  #left-sidebar-menu ul ul a {
+    padding-left: 10px;
+  }
+
+
+}

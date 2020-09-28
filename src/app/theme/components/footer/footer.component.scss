@@ -1,0 +1,50 @@
+@import '../../styles/global';
+
+#footer {
+  bottom: 0;
+  position: absolute;
+  right: 0;
+  padding: $footer-height 0px $footer-height;
+  left: $sidebar-width;
+  
+
+  -webkit-transition: all .2s ease-out;
+  transition: all .2s ease-out;
+
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+#footer .links a {
+  margin-left: 1.5rem;
+
+  transition: transform .2s ease-in-out;
+  will-change: transform;
+}
+#footer .links a:first-of-type {
+    margin-left: 0;
+}
+
+@include media-breakpoint-down(xs){
+  #footer {
+    left: 0!important;
+    text-align: center;
+  }
+}
+@include media-breakpoint-down(sm){
+  #footer {
+    left: $sidebar-compact-width;
+  }
+}
+
+// COLORS
+/* ========================================================================
+ * FOOTER
+ * ======================================================================== */
+ #footer {
+  background-color: #2d3035;
+  border-top: $border-size solid $border-color;
+  color: #8a8d93;
+}

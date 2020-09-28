@@ -1,0 +1,35 @@
+@import '../../styles/global';
+
+.content-page {
+  margin-left: $sidebar-width;
+  overflow: hidden;
+  -webkit-transition: all .2s ease-out;
+  transition: all .2s ease-out;
+  padding: $header-height 0px 65px;
+}
+
+
+@include media-breakpoint-down(xs){
+  .content-page {
+    margin-left: 0!important;
+    padding: 65px 10px 65px;
+  }
+}
+@include media-breakpoint-down(sm){
+  .content-page {
+    margin-left: $sidebar-compact-width;
+    padding-left: 0;
+  }
+}
+
+
+
+.wrapper {
+    height: 100%;
+    overflow: hidden;
+    width: 100%;
+}
+
+.container-fluid {
+  padding: 0;
+}

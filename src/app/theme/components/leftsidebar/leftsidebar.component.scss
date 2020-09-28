@@ -1,0 +1,72 @@
+@import '../../styles/global';
+#left-sidebar {
+  width: $sidebar-width;
+  z-index: 10;
+  top: 0;
+  bottom: 0;
+  position: fixed;
+  padding-top: $header-height;
+
+  -webkit-transition: all .2s ease-out;
+  transition: all .2s ease-out;
+  
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+@include media-breakpoint-down(xs){
+  #left-sidebar {
+    display: none;
+    z-index: 10!important;
+  }
+}
+@include media-breakpoint-up(sm){
+  #logo .logo-sm {
+    display: none;
+  }
+}
+@include media-breakpoint-down(sm){
+  #left-sidebar {
+    position: absolute;
+    width: $sidebar-compact-width;
+    z-index: 5;
+  }
+  #logo .logo-sm {
+    display: block !important;
+    width: $sidebar-compact-width;
+  }
+  #logo .logo-lg {
+    display: none;
+  }
+}
+/* ========================================================================
+ * LOGO
+ * ======================================================================== */
+#logo {
+  display: block;
+  line-height: $header-height;
+  width: $sidebar-width;
+  position: fixed;
+  top: 0;
+  border-bottom:  $border-size solid $border-color;
+  background: #2d3035;
+  z-index: 99;
+}
+
+// COLORS
+/* ========================================================================
+ * LEFTSIDEBAR
+ * ======================================================================== */
+#left-sidebar {
+  background-color: #2d3035;
+  border-right:  $border-size solid $border-color;
+  color: #8a8d93;
+  box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+	-moz-box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+}
+
+
+

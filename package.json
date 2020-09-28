@@ -1,0 +1,49 @@
+{
+  "name": "angular-first-site-test",
+  "version": "0.0.0",
+  "license": "MIT",
+  "scripts": {
+    "ng": "ng",
+    "start": "ng serve",
+    "build": "ng build --prod",
+    "test": "ng test",
+    "lint": "ng lint",
+    "e2e": "ng e2e"
+  },
+  "private": true,
+  "dependencies": {
+    "@agm/core": "1.1.0",
+    "@angular/animations": "8.2.14",
+    "@angular/cdk": "8.2.3",
+    "@angular/common": "8.2.14",
+    "@angular/compiler": "8.2.14",
+    "@angular/core": "8.2.14",
+    "@angular/forms": "8.2.14",
+    "@angular/platform-browser": "8.2.14",
+    "@angular/platform-browser-dynamic": "8.2.14",
+    "@angular/router": "8.2.14",
+    "@fortawesome/angular-fontawesome": "^0.6.0",
+    "@fortawesome/fontawesome-svg-core": "^1.2.27",
+    "@fortawesome/free-regular-svg-icons": "^5.12.1",
+    "@fortawesome/free-solid-svg-icons": "^5.12.1",
+    "@ng-bootstrap/ng-bootstrap": "^5.0.0",
+    "bootstrap": "^4.4.1",
+    "font-awesome": "4.7.0",
+    "jquery": "1.9.1 - 3",
+    "pace-js": "1.0.2",
+    "popper.js": "^1.16.0",
+    "rxjs": "6.5.2",
+    "rxjs-compat": "6.3.0",
+    "tslib": "1.11.1",
+    "zone.js": "0.9.1"
+  },
+  "devDependencies": {
+    "@angular-devkit/build-angular": "~0.800.2",
+    "@angular/cli": "^8.0.2",
+    "@angular/compiler-cli": "^8.0.0",
+    "@angular/language-service": "8.0.0",
+    "tslint": "^5.7.0",
+    "tslint-language-service": "^0.9.9",
+    "typescript": "3.4.5"
+  }
+}
